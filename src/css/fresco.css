@@ -56,9 +56,11 @@
 
 /* mobile touch has position:absolute to allow zooming */
 .fr-window.fr-mobile-touch,
-.fr-overlay.fr-mobile-touch {
-  position: absolute;
+.fr-overlay.fr-mobile-touch,
+.fr-window.fr-mobile-touch {
+  position: fixed;
   overflow: visible;
+  top: 0 !important;
 }
 
 /* some properties on the window are used to toggle things
